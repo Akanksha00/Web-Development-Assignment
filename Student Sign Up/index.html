@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Student|Sign Up</title>
+		<style>
+			body {
+				font-family: "Times New Roman", Times, serif;
+			}
+
+			.form-container h2 {
+				text-align: center;
+				margin-top: 150px;
+				font-size: 25px;
+			}
+
+			h2 {
+				margin-right: 150px;
+			}
+
+			.form-row {
+				margin-bottom: 15px;
+			}
+
+			label {
+				display: inline-block;
+				width: 150px;
+				text-align: right;
+				font-weight: bold;
+				text-align: center;
+				margin-left: 400px;
+			}
+
+			.form-row {
+				margin-bottom: -15px;
+			}
+
+			input[type="email"],
+			input[type="password"] {
+				width: 220px;
+				padding: 5px;
+			}
+
+			button {
+				padding: 6px 20px;
+				margin-top: 1px;
+				margin-left: 500px;
+			}
+
+		</style>
+		</style>
+	</head>
+
+	<body>
+		<div class="form-container">
+			<h2>Sign Up</h2>
+		</div>
+		<div class="form-container">
+			<form method="post" target="_self">
+				<div class="form-row">
+					<label for="username">Username:</label>
+					<input placeholder="Enter Email ID" type="email" id="username" name="username" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Please enter a valid email address"><br><br>
+				</div>
+				<div class="form-row">
+					<label for="password">Password:</label>
+					<input type="password" id="password" name="password" required minlength="6" title="Password must be at least 6 characters"><br><br>
+				</div>
+				<div class="form-row">
+					<label for="confirm-password">Confirm Password:</label>
+					<input type="password" id="confirm-password" name="confirm-password" required minlength="6" title="Please confirm your password"><br><br>
+				</div>
+				<button type="submit">Sign Up</button>
+				<!-- <input type="submit" value="Sign Up"> -->
+			</form>
+		</div>
+	</body>
+
+</html>

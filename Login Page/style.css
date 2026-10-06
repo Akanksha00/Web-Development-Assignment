@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+
+  body {
+    position: relative;
+  }
+
+  /* Positioned exactly 200px from top and bottom, and centered
+     horizontally so the left/right distance to the viewport edges
+     is always equal. */
+  .login-box {
+    position: absolute;
+    top: 200px;
+    bottom: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    max-width: calc(100vw - 40px);
+
+    background-color: #F1E7BA;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    border-radius: 4px;
+  }
+
+  .field label {
+    display: block;
+    font-weight: 700;
+    color: #6b6350;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+
+  .field input {
+    width: 100%;
+    padding: 12px 14px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    background: #ffffff;
+    color: #333;
+  }
+
+  .field input::placeholder {
+    color: #9a9a9a;
+  }
+
+  .field input:focus {
+    outline: 2px solid #E84420;
+    outline-offset: 1px;
+  }
+
+  .login-btn {
+    width: 100%;
+    padding: 16px;
+    margin-top: 10px;
+    background-color: #E84420;
+    color: #ffffff;
+    border: none;
+    border-radius: 28px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+
+  .login-btn:hover {
+    background-color: #d13a18;
+  }
+
+  .login-btn:focus-visible {
+    outline: 2px solid #333;
+    outline-offset: 2px;
+  }

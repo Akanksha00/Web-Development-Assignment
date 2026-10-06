@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>First and Last Name</title>
+</head>
+<body>
+
+    <form onsubmit="getValues(event)">
+
+        <label for="firstName">First Name:</label><br>
+        <input type="text" id="firstName" required>
+        <br><br>
+
+        <label for="lastName">Last Name:</label><br>
+        <input type="text" id="lastName" required>
+        <br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <script>
+        function getValues(event) {
+            event.preventDefault();
+
+            let firstName = document.getElementById("firstName").value;
+            let lastName = document.getElementById("lastName").value;
+
+            console.log("First Name: " + firstName);
+            console.log("Last Name: " + lastName);
+        }
+    </script>
+
+</body>
+</html>

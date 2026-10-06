@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Shadows</title>
+		<style>
+			body {
+				font-family: "Times New Roman", Times, serif;
+				text-align: center;
+				margin-top: 50px;
+			}
+
+			div {
+				width: 500px;
+				border: 2px solid black;
+				text-align: center;
+				margin: 20px auto;
+				box-shadow: 12px 12px 8px -4px rgba(155, 160, 107, 0.365);
+				border-radius: 0px;
+			}
+
+			h1 {
+				font-size: 38px;
+				text-shadow: 6px 6px 4px rgba(155, 160, 107, 0.365);
+			}
+
+			img {
+				width: 500px;
+				height: 250px;
+				margin-top: 20px;
+				box-shadow: 13px 15px 8px -4px rgba(155, 160, 107, 0.365);
+				border-radius: 0px;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<h1><b>ITVEDANT</b></h1>
+		<div>
+			<i>India's Leading and Trusted IT Training Institute Offering Classroom & Online Training</i>
+		</div>
+		<img src="logo.jpeg" alt="ITVEDANT Logo">
+	</body>
+
+</html>
